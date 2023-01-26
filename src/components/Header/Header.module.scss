@@ -1,0 +1,18 @@
+@import '../../styles/abstract/variaveis';
+
+.Header{
+    border-bottom: 2px solid $cor-fonte-1;
+    background: $cor-fundo-2;
+    color: $cor-fonte-1;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    min-height: 6rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: $size-fonte-titulo;
+        text-align: center;
+    }
+}

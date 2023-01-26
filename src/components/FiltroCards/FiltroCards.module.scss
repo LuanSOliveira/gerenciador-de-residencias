@@ -1,0 +1,32 @@
+@import '../../styles/abstract/variaveis';
+
+.FiltroCards{
+    text-align: center;
+    margin: 1rem 0;
+    h2{
+        color: $cor-fonte-1;
+        font-size: $size-fonte-botao;
+    }
+    img{
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        margin: 0 .8rem;
+        background: $cor-botao-1;
+        padding: .5rem;
+        border-radius: 35px;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,0.1);
+        transition: background .3s;
+        &:hover{
+            background: $cor-botao-3;
+        }
+    }
+
+    .BoxIcones{
+        margin-top: 1rem;
+        
+        .IconeTodos{
+            margin-right: 2.5rem;
+        }
+    }
+}

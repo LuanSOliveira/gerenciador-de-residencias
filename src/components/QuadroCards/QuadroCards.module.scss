@@ -1,0 +1,49 @@
+.QuadroCards{
+    display: flex;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        width: 30rem;
+        flex-wrap: wrap;
+    }
+
+    li{
+        margin: 1.5rem;
+        text-indent: 0;
+        list-style-type: none;
+    }
+}
+
+@media (min-width: 650px){
+    .QuadroCards{
+        ul{
+            width: 60rem;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .QuadroCards{
+        ul{
+            width: 90rem;
+        }
+    }
+}
+
+@media (min-width: 1366px){
+    .QuadroCards{
+        ul{
+            width: 120rem;
+        }
+    }
+}
+
+@media (min-width: 1920px){
+    .QuadroCards{
+        ul{
+            width: 150rem;
+        }
+    }
+}

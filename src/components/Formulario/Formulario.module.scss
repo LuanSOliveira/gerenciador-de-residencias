@@ -1,0 +1,75 @@
+@import '../../styles/abstract/variaveis';
+
+.BoxFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .Formulario{
+        background: $cor-fundo-2;
+        width: 27rem;
+        min-height: 40rem;
+        padding: 1rem;
+        border-radius: 15px;
+        h2{
+            font-size: $size-font-form-1;
+            font-weight: bold;
+            text-align: center;
+            color: $cor-fonte-1;
+            width: 90%;
+        }
+
+        .Titulo{
+            display: flex;
+
+            img{
+                width: $size-icon-form-1;
+                height: $size-icon-form-1;
+                cursor: pointer;
+            }
+        }
+
+        .CamposInput{
+            margin-top: 1.2rem;
+            input, textarea{
+                font-size: $size-font-form-2;
+                font-weight: bold;
+                padding: .5rem;
+                margin: .4rem 0 1rem 0;
+                width: 95%;
+                outline: none;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+            }
+            textarea{
+                height: 12rem;
+            }
+            label{
+                font-size: $size-font-form-2;
+                font-weight: bold;
+                color: $cor-fonte-1;
+                select{
+                    width: 70%;
+                    margin: .4rem;
+                    outline: none;
+                    font-size: $size-font-form-2;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    padding: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .BoxBotao{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

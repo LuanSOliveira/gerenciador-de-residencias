@@ -1,0 +1,54 @@
+@import '../../styles/abstract/variaveis';
+
+.CardMesPagamento{
+    background: $cor-fundo-1;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    display: flex;
+    margin: 1rem 0rem;
+    cursor: pointer;
+
+    .BordaStatus{
+        width: .7rem;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .BordaStatusAguardando{background: rgb(168, 167, 167);}
+    .BordaStatusCaucao{background: rgb(167, 0, 167);}
+    .BordaStatusPago{background: rgb(0, 158, 0);}
+    .BordaStatusAtraso{background: rgb(216, 216, 0);}
+    .BordaStatusDevendo{background: rgb(231, 0, 0);}
+
+    .BoxInformacoes{
+        padding: .7rem .7rem .7rem .7rem;
+
+        .Cabecalho{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+            }
+
+            .Textos{
+                width: 21rem;
+                h3{
+                    font-size: $size-font-card-3;
+                }
+            }
+        }
+
+        .Datas{
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 650px){
+    .CardMesPagamento{
+        width: 27rem;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,112 @@
+@import '../../styles/abstract/variaveis';
+
+.QuadroInformacoesCasa{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $cor-fonte-1;
+    h2{
+        font-size: $size-font-card-1;
+    }
+    h3{
+        font-size: $size-font-card-2;
+    }
+    p{
+        font-size: $size-font-card-3;
+    }
+
+    .BoxInformacoes{
+        background: $cor-fundo-2;
+        padding: 1rem;
+        width: 27rem;
+        border-radius: 15px;
+        box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+
+        .BoxCabecalho{
+            display: flex;
+            img{
+                width: 48px;
+                height: 48px;
+                margin-right: 2rem;
+            }
+
+            .Cabecalho{
+                width: 15rem;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .BoxEndereco{
+            margin: 1.5rem 0;
+        }
+
+        .BoxPagamentos{
+            margin-top: 3rem;
+
+            .SelectAno{
+                margin: 1rem 0;
+                select{
+                    text-align: center;
+                    font-weight: bold;
+                    border-radius: 15px;
+                    outline: none;
+                    font-size: $size-font-form-2;
+                    padding: .3rem;
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-left: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            .BoxCardsPagamento{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (min-width: 650px){
+    .QuadroInformacoesCasa{
+        h2{
+            font-size: $size-font-card-1-2;
+        }
+        h3{
+            font-size: $size-font-card-2-2;
+        }
+        p{
+            font-size: $size-font-card-3-2;
+        }
+        .BoxInformacoes{
+            width: 60rem;
+        }
+
+        .BoxPagamentos{
+            .BoxCardsPagamento{
+                justify-content: center;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .QuadroInformacoesCasa{
+        .BoxInformacoes{
+            width: 90rem;
+        }
+    }
+}
+
+@media (min-width: 1440px){
+    .QuadroInformacoesCasa{
+        .BoxInformacoes{
+            width: 120rem;
+        }
+    }
+}

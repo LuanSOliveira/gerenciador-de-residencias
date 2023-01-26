@@ -1,0 +1,63 @@
+@import '../../styles/abstract/variaveis';
+
+@mixin icones($size){
+    height: $size;
+    width: $size;
+}
+
+@mixin descricoes($font){
+    font-size: $font;
+    text-align: center;
+}
+
+.CardCasa{
+    background: $cor-fundo-2;
+    width: 27rem;
+    height: 16rem;
+    padding-top: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow .5s;
+    &:hover{
+        box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);;
+    }
+
+    .Titulo{
+        display: flex;
+        margin-left: 1rem;
+
+        .IconPadrao{
+            @include icones($size-icon-card-1);
+        }
+
+        .Descricao{
+            width: 72%;
+            margin-left: 2rem;
+            h2{
+                @include descricoes($size-font-card-1);
+            }
+            h3{
+                @include descricoes($size-font-card-2);
+            }
+        }
+    }
+
+    .Informacoes{
+        margin-top: .5rem;
+        margin-left: 1rem;
+        p{
+            font-size: $size-font-card-3;
+            margin: 2px;
+        }
+
+        .Contato{
+            display: flex;
+            
+            .IconContato{
+                @include icones($size-icon-card-2);
+                margin-right: 5px;
+            }
+        }
+    }
+}

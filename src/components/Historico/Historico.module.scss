@@ -1,0 +1,67 @@
+@import '../../styles/abstract/variaveis';
+
+.BoxHistorico{
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .Historico{
+        background: $cor-fundo-1;
+        margin-top: 7rem;
+        width: 27rem;
+        min-height: 40rem;
+        max-height: 60rem;
+        padding: 1rem;
+        border-radius: 15px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        h2{
+            font-size: $size-font-form-1;
+            font-weight: bold;
+            text-align: center;
+            color: $cor-fonte-1;
+            width: 90%;
+        }
+
+        .Titulo{
+            display: flex;
+
+            img{
+                width: $size-icon-form-1;
+                height: $size-icon-form-1;
+                cursor: pointer;
+            }
+        }
+
+        .Cards{
+            margin: 2rem 0;
+        }
+    }
+
+    .Historico::-webkit-scrollbar{
+        width: 3px;
+        border-radius: 15px;
+    }
+
+    .Historico::-webkit-scrollbar-track{
+        border-radius: 15px;
+    }
+
+    .Historico::-webkit-scrollbar-thumb{
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 800px){
+    .BoxHistorico{
+        .Historico{
+            max-height: 70rem;
+        }
+    }
+}
